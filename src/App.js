@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { connect } from "react-redux";
+import { Spinner } from "reactstrap";
+import PropTypes from "prop-types";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Routes from "@/routes";
+import { Layout } from "@/views";
+import actions from "@/features/Auth/actions";
+
+export class App extends React.Component {
+  componentDidMount() {
+    this.props.onTryAutoSignup();
+  }
+  render() {
+    const { isAutoSignupInProcess, isAuthenticated } = this.props;
+
+    if (isAutoSignupInProcess) return <Spinner />;
+
+    return (
+      <>
+        <Layout isAuthenticated={isAuthenticated}>
+          <Suspense fallback={<Spinner />}>
+            <Routes isAuthenticated={isAuthenticated} />
+          </Suspense>
+        </Layout>
+      </>
+    );
+  }
 }
 
-export default App;
+App.propTypes = {
+  onTryAutoSignup: PropTypes.func.isRequired,
+  isAutoSignupInProcess: PropTypes.bool,
+  isAuthenticated: PropTypes.bool,
+};
+
+const mapStateToProps = ({ auth }) => ({
+  isAutoSignupInProcess: auth.isLoading,
+  isAuthenticated: auth.data.token !== null,
+});
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onTryAutoSignup: () => dispatch(actions.authCheckState()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
