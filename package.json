@@ -57,7 +57,7 @@
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "react-image-gallery": "^0.8.18",
+    "react-image-gallery": "^1.0.7",
     "react-paginate": "^6.3.0",
     "react-redux": "^7.1.0",
     "react-router": "^5.0.1",
