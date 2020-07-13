@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://movieapp-ecru.vercel.app/",
   "dependencies": {
-    "@babel/core": "7.4.3",
+    "@babel/core": "7.10.4",
     "@svgr/webpack": "4.1.0",
     "@testing-library/jest-dom": "^5.0.2",
     "@testing-library/react": "^9.4.0",
