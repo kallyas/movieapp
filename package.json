@@ -7,7 +7,7 @@
     "@babel/core": "7.10.4",
     "@svgr/webpack": "4.1.0",
     "@testing-library/jest-dom": "^5.0.2",
-    "@testing-library/react": "^9.4.0",
+    "@testing-library/react": "^10.4.6",
     "@testing-library/user-event": "^7.1.2",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
@@ -160,7 +160,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.0.2",
-    "@testing-library/react": "^9.4.0",
+    "@testing-library/react": "^10.4.6",
     "@types/react-dev-utils": "^9.0.4"
   }
 }
