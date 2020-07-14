@@ -68,7 +68,7 @@
     "redux": "^4.0.4",
     "redux-saga": "^1.0.5",
     "resolve": "1.10.0",
-    "sass-loader": "7.1.0",
+    "sass-loader": "7.3.1",
     "semver": "6.0.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.3",
