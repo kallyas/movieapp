@@ -30,7 +30,7 @@ describe("Auth", () => {
     expect(passwordInput.value).toBe("password");
     fireEvent.click(form.querySelector("button"));
 
-    await waitFor(() => {
+    await wait(() => {
       expect(onAuth).toHaveBeenCalledTimes(1);
     });
   });
