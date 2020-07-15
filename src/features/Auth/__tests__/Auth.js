@@ -18,19 +18,19 @@ describe("Auth", () => {
     const passwordInput = form.querySelector("input[name=password]");
     fireEvent.change(emailInput, {
       target: {
-        value: "test@test.test"
-      }
+        value: "test@test.test",
+      },
     });
     fireEvent.change(passwordInput, {
       target: {
-        value: "password"
-      }
+        value: "password",
+      },
     });
     expect(emailInput.value).toBe("test@test.test");
     expect(passwordInput.value).toBe("password");
     fireEvent.click(form.querySelector("button"));
 
-    await wait(() => {
+    await waitFor(() => {
       expect(onAuth).toHaveBeenCalledTimes(1);
     });
   });

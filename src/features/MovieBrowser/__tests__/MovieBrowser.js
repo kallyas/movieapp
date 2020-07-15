@@ -28,7 +28,7 @@ describe("MovieBrowser", () => {
       path: "/",
     });
     expect(container.innerHTML.match("Loading")).toBeTruthy();
-    await wait(() => {
+    await waitFor(() => {
       expect(
         container.getElementsByClassName("movie-card").length
       ).toBeGreaterThan(0);
