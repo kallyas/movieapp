@@ -4,15 +4,15 @@ import mockAxios from "axios";
 
 import { renderWithRouterMatchAndRedux } from "../../../test-utils";
 import MovieBrowser from "../MovieBrowser";
-import { movies, genres } from "../../../__mocks__/fakeResponse"
+import { movies, genres } from "../../../__mocks__/fakeResponse";
 
-jest.mock("../../../hoc/WithHttpErrorHandler", () => Component => props => (
+jest.mock("../../../hoc/WithHttpErrorHandler", () => (Component) => (props) => (
   <Component {...props} />
 ));
 
 describe("MovieBrowser", () => {
   it("MovieBrowser shows movies according to selected filter", async () => {
-    mockAxios.get.mockImplementation(url => {
+    mockAxios.get.mockImplementation((url) => {
       switch (url) {
         case "/genre/movie/list":
           return Promise.resolve({ data: genres });
@@ -25,10 +25,9 @@ describe("MovieBrowser", () => {
 
     const { container } = renderWithRouterMatchAndRedux(MovieBrowser, {
       route: "/",
-      path: "/"
+      path: "/",
     });
     expect(container.innerHTML.match("Loading")).toBeTruthy();
-
     await wait(() => {
       expect(
         container.getElementsByClassName("movie-card").length
