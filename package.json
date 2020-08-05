@@ -158,7 +158,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.2",
-    "@testing-library/react": "^10.4.7",
+    "@testing-library/react": "^10.4.8",
     "@types/react-dev-utils": "^9.0.4",
     "yarn-upgrade-all": "^0.5.4"
   }
