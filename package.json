@@ -8,7 +8,7 @@
     "@svgr/webpack": "^5.4.0",
     "@testing-library/user-event": "^12.1.1",
     "@typescript-eslint/parser": "^3.9.0",
-    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
     "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
