@@ -5,7 +5,7 @@
   "homepage": "https://movieapp-ecru.vercel.app/",
   "dependencies": {
     "@babel/core": "^7.12.3",
-    "@svgr/webpack": "^5.4.0",
+    "@svgr/webpack": "^5.5.0",
     "@typescript-eslint/parser": "^3.10.1",
     "@testing-library/user-event": "^12.6.0",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
