@@ -12,7 +12,7 @@
     "axios": "^0.21.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.5.2",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^8.2.2",
     "babel-plugin-named-asset-import": "^0.3.6",
     "babel-preset-react-app": "^9.1.2",
     "bootstrap": "^4.5.3",
