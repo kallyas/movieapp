@@ -76,7 +76,7 @@
     "webpack-dev-server": "^4.3.1",
     "webpack-manifest-plugin": "^3.0.0",
     "workbox-webpack-plugin": "^6.3.0",
-    "yup": "^0.32.9"
+    "yup": "^0.32.11"
   },
   "resolutions": {
     "react-side-effect": "^2.1.0"
