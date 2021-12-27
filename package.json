@@ -5,11 +5,11 @@
   "homepage": "https://movieapp-ecru.vercel.app/",
   "dependencies": {
     "@babel/core": "^7.12.3",
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/webpack": "^6.0.0",
     "@testing-library/user-event": "^12.6.0",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^3.10.1",
-    "axios": "^0.21.2",
+    "axios": "^0.24.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
@@ -24,11 +24,11 @@
     "eslint": "^7.32.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-flowtype": "^5.10.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.1.1",
     "formik": "^2.2.5",
     "fs-extra": "^10.0.0",
@@ -38,9 +38,9 @@
     "jest": "^26.6.3",
     "jest-environment-jsdom-fourteen": "^1.0.1",
     "jest-resolve": "^26.6.2",
-    "jest-watch-typeahead": "^0.6.1",
+    "jest-watch-typeahead": "^0.6.5",
     "mini-css-extract-plugin": "^2.3.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "pnp-webpack-plugin": "^1.6.4",
@@ -75,7 +75,7 @@
     "webpack": "^5.45.1",
     "webpack-dev-server": "^4.3.1",
     "webpack-manifest-plugin": "^3.0.0",
-    "workbox-webpack-plugin": "^6.3.0",
+    "workbox-webpack-plugin": "^6.4.2",
     "yup": "^0.32.11"
   },
   "resolutions": {
@@ -158,7 +158,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^12.1.0",
+    "@testing-library/react": "^12.1.2",
     "@types/react-dev-utils": "^9.0.4",
     "yarn-upgrade-all": "^0.5.4"
   }
