@@ -63,7 +63,7 @@
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^17.0.2",
     "reactstrap": "^9.2.3",
-    "redux": "^4.2.1",
+    "redux": "^5.0.1",
     "redux-saga": "^1.5.1",
     "resolve": "^1.22.12",
     "sass-loader": "^10.5.2",
