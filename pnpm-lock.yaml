@@ -88,7 +88,7 @@ importers:
         version: 6.2.0(webpack@5.110.1(clean-css@5.3.3)(cssnano@5.1.15(postcss@8.5.26))(csso@5.0.5)(html-minifier-terser@6.1.0)(postcss@8.5.26))
       formik:
         specifier: ^2.4.9
-        version: 2.4.9(@types/react@19.2.18)(react@17.0.2)
+        version: 2.4.9(@types/react@17.0.93)(react@17.0.2)
       fs-extra:
         specifier: ^10.1.0
         version: 10.1.0
@@ -5411,8 +5411,8 @@ packages:
   last-call-webpack-plugin@3.0.0:
     resolution: {integrity: sha512-7KI2l2GIZa9p2spzPIVZBYyNKkN+e/SQPpnjlTiPhdbDW3F86tdKKELxKpzJ5sgU19wQWsACULZmpTPYHeWO5w==}
 
-  launch-editor@2.14.1:
-    resolution: {integrity: sha512-QWBrQsMpH7gPr965dsKD/3cKWiNoTjpATQf++Xq63N6sKRGMwlVXz41O1IZTMfZQgBctD/K5Zt06+/I6pP6+HA==}
+  launch-editor@2.14.2:
+    resolution: {integrity: sha512-NHJEb30MGBCkmZXLZwz25t37QR4aY03ZzPYUJXOJaOa92uWwExI9SBQUuIznBYc1xkD7cJNGX7oc3Nl3sq2kQQ==}
 
   leven@3.1.0:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
@@ -10841,6 +10841,11 @@ snapshots:
     dependencies:
       '@types/node': 26.4.0
 
+  '@types/hoist-non-react-statics@3.3.7(@types/react@17.0.93)':
+    dependencies:
+      '@types/react': 17.0.93
+      hoist-non-react-statics: 3.3.2
+
   '@types/hoist-non-react-statics@3.3.7(@types/react@19.2.18)':
     dependencies:
       '@types/react': 19.2.18
@@ -13514,9 +13519,9 @@ snapshots:
       hasown: 2.0.4
       mime-types: 2.1.35
 
-  formik@2.4.9(@types/react@19.2.18)(react@17.0.2):
+  formik@2.4.9(@types/react@17.0.93)(react@17.0.2):
     dependencies:
-      '@types/hoist-non-react-statics': 3.3.7(@types/react@19.2.18)
+      '@types/hoist-non-react-statics': 3.3.7(@types/react@17.0.93)
       deepmerge: 2.2.1
       hoist-non-react-statics: 3.3.2
       lodash: 4.18.1
@@ -15333,7 +15338,7 @@ snapshots:
       lodash: 4.18.1
       webpack-sources: 1.4.3
 
-  launch-editor@2.14.1:
+  launch-editor@2.14.2:
     dependencies:
       picocolors: 1.1.1
       shell-quote: 1.10.0
@@ -18470,7 +18475,7 @@ snapshots:
       html-entities: 2.6.0
       http-proxy-middleware: 2.0.10(@types/express@4.17.25)(debug@4.4.3(supports-color@8.1.1))
       ipaddr.js: 2.5.0
-      launch-editor: 2.14.1
+      launch-editor: 2.14.2
       open: 8.4.2
       p-retry: 4.6.2
       rimraf: 3.0.2
@@ -18509,7 +18514,7 @@ snapshots:
       graceful-fs: 4.2.11
       http-proxy-middleware: 2.0.10(@types/express@4.17.25)(debug@4.4.3(supports-color@8.1.1))
       ipaddr.js: 2.5.0
-      launch-editor: 2.14.1
+      launch-editor: 2.14.2
       open: 10.2.0
       p-retry: 6.2.1
       schema-utils: 4.3.3
