@@ -88,7 +88,7 @@ importers:
         version: 6.2.0(webpack@5.110.1(clean-css@5.3.3)(cssnano@5.1.15(postcss@8.5.26))(csso@5.0.5)(html-minifier-terser@6.1.0)(postcss@8.5.26))
       formik:
         specifier: ^2.4.9
-        version: 2.4.9(@types/react@19.2.18)(react@17.0.2)
+        version: 2.4.9(@types/react@17.0.93)(react@17.0.2)
       fs-extra:
         specifier: ^10.1.0
         version: 10.1.0
@@ -4626,8 +4626,8 @@ packages:
   invariant@2.2.4:
     resolution: {integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==}
 
-  ip-address@10.5.0:
-    resolution: {integrity: sha512-R5SnVLJmgYYvf2F2ZgwSBnelz5G4q5AxIC277GDfUaNbrZKNANcBC7RHqYYePlszf4kBolVkJauG0ZjHHFh55g==}
+  ip-address@10.7.5:
+    resolution: {integrity: sha512-t2v0rkILYv9WXmSL7TpAaU3HXgaFYOPUcH3QHgwQ++gpJuH3bqyMy4Fvt/DJCTKwzH3Cf+bAp5W/mFL39KPLzA==}
     engines: {node: '>= 12'}
 
   ipaddr.js@1.9.1:
@@ -10841,6 +10841,11 @@ snapshots:
     dependencies:
       '@types/node': 26.4.0
 
+  '@types/hoist-non-react-statics@3.3.7(@types/react@17.0.93)':
+    dependencies:
+      '@types/react': 17.0.93
+      hoist-non-react-statics: 3.3.2
+
   '@types/hoist-non-react-statics@3.3.7(@types/react@19.2.18)':
     dependencies:
       '@types/react': 19.2.18
@@ -13514,9 +13519,9 @@ snapshots:
       hasown: 2.0.4
       mime-types: 2.1.35
 
-  formik@2.4.9(@types/react@19.2.18)(react@17.0.2):
+  formik@2.4.9(@types/react@17.0.93)(react@17.0.2):
     dependencies:
-      '@types/hoist-non-react-statics': 3.3.7(@types/react@19.2.18)
+      '@types/hoist-non-react-statics': 3.3.7(@types/react@17.0.93)
       deepmerge: 2.2.1
       hoist-non-react-statics: 3.3.2
       lodash: 4.18.1
@@ -14012,7 +14017,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  ip-address@10.5.0: {}
+  ip-address@10.7.5: {}
 
   ipaddr.js@1.9.1: {}
 
@@ -17620,7 +17625,7 @@ snapshots:
 
   socks@2.8.9:
     dependencies:
-      ip-address: 10.5.0
+      ip-address: 10.7.5
       smart-buffer: 4.2.0
 
   source-list-map@2.0.1: {}
